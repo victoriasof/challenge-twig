@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Challenge Twig{% endblock %}
+
+{% block body %}
+    <p>Message: {{ message }}</p>
+
+    <form action="{{ path('index') }}" method="post">
+        <input type="text" name="message" placeholder="message">
+        <button type="submit">Add message</button>
+    </form>
+{% endblock %}
